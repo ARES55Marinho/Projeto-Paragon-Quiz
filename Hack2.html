@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Adapta a tela para computadores e celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Hack - Pergunta 1</title>
+
+    <!-- Conecta o CSS compartilhado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         CONTAINER PRINCIPAL
+         ======================================== -->
+
+    <main class="question-container">
+
+
+        <!-- ========================================
+             CABEÇALHO DO QUIZ
+             ======================================== -->
+
+        <header class="question-header">
+
+            <!-- Nome do quiz recuperado pelo JavaScript -->
+            <h1 id="quiz-name">Paragon Quiz</h1>
+
+
+            <!-- ========================================
+                 CLIPE DE PAPEL
+                 ======================================== -->
+
+            <div class="question-mascot">
+
+                <!-- Imagem do clipe de papel -->
+                <img
+                    src="clippy-removebg-preview.png"
+                    alt="Clipe de papel"
+                >
+
+            </div>
+
+        </header>
+
+
+        <!-- ========================================
+             ÁREA DA PERGUNTA
+             ======================================== -->
+
+        <section class="question-area">
+
+
+            <!-- Número da pergunta -->
+            <h2 class="question-number">
+                pergunta 1
+            </h2>
+
+
+            <!-- ========================================
+                 TEXTO DA PERGUNTA
+                 ======================================== -->
+
+            <div class="question-text-box">
+
+                <!-- Pergunta do tema Hack -->
+                <h3>
+                    próxima
+                </h3>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ========================================
+             ÁREA DAS ALTERNATIVAS
+             ======================================== -->
+
+        <section class="answers-area">
+
+
+            <!-- ========================================
+                 ALTERNATIVA 1
+                 ======================================== -->
+
+            <button
+                class="answer-option"
+                data-answer="fortran"
+                type="button"
+            >
+
+                <span class="answer-text">
+                    Fortran
+                </span>
+
+                <span class="answer-circle"></span>
+
+            </button>
+
+
+            <!-- ========================================
+                 ALTERNATIVA 2
+                 ======================================== -->
+
+            <button
+                class="answer-option"
+                data-answer="python"
+                type="button"
+            >
+
+                <span class="answer-text">
+                    Python
+                </span>
+
+                <span class="answer-circle"></span>
+
+            </button>
+
+
+            <!-- ========================================
+                 ALTERNATIVA 3
+                 ======================================== -->
+
+            <button
+                class="answer-option"
+                data-answer="c"
+                type="button"
+            >
+
+                <span class="answer-text">
+                    C
+                </span>
+
+                <span class="answer-circle"></span>
+
+            </button>
+
+
+            <!-- ========================================
+                 ALTERNATIVA 4
+                 ======================================== -->
+
+            <button
+                class="answer-option"
+                data-answer="java"
+                type="button"
+            >
+
+                <span class="answer-text">
+                    Java
+                </span>
+
+                <span class="answer-circle"></span>
+
+            </button>
+
+
+        </section>
+
+
+        <!-- ========================================
+             FEEDBACK DA RESPOSTA
+             ======================================== -->
+
+        <section
+            id="answer-feedback"
+            class="answer-feedback"
+            aria-live="polite"
+        >
+
+            <!-- Resultado preenchido pelo JavaScript -->
+
+            <span id="feedback-status"></span>
+
+            <span id="feedback-title"></span>
+
+            <span id="feedback-description"></span>
+
+        </section>
+
+
+        <!-- ========================================
+             RODAPÉ E BOTÃO ENVIAR
+             ======================================== -->
+
+        <footer class="question-footer">
+
+            <button
+                id="submit-answer"
+                type="button"
+            >
+                enviar
+            </button>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- Conecta o JavaScript da pergunta -->
+    <script src="hack1.js"></script>
+
+</body>
+</html>

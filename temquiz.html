@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Adapta a tela para computadores e celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paragon Quiz - Seleção</title>
+
+    <!-- Utiliza o CSS compartilhado do projeto -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         CONTAINER PRINCIPAL
+         ======================================== -->
+
+    <main class="quiz-container">
+
+
+        <!-- ========================================
+             CABEÇALHO
+             ======================================== -->
+
+        <header class="quiz-header">
+
+            <!-- Título da tela -->
+            <h1>selecione o quiz</h1>
+
+        </header>
+
+
+        <!-- ========================================
+             ÁREA PRINCIPAL
+             ======================================== -->
+
+        <section class="theme-content">
+
+
+            <!-- ========================================
+                 MASCOTE CLIPE DE PAPEL
+                 ======================================== -->
+
+            <div class="mascot-container">
+
+                <!--
+                    Coloque a imagem do clipe de papel
+                    na mesma pasta deste arquivo HTML.
+                -->
+
+                <img
+                    src="clippy-removebg-preview.png"
+                    alt="Clipe de papel"
+                    class="mascot-image"
+                >
+
+            </div>
+
+
+            <!-- ========================================
+                 LISTA DE TEMAS
+                 ======================================== -->
+
+            <div class="themes-list">
+
+
+                <!-- TEMA 1 -->
+
+                <button
+                    class="theme-option"
+                    data-theme="programacao"
+                    type="button"
+                >
+
+                    <span class="theme-name">
+                        Diferenças de linguagens de Programação
+                    </span>
+
+                    <span class="selection-circle"></span>
+
+                </button>
+
+
+                <!-- TEMA 2 -->
+
+                <button
+                    class="theme-option"
+                    data-theme="hack"
+                    type="button"
+                >
+
+                    <span class="theme-name">
+                        Hack em Geral
+                    </span>
+
+                    <span class="selection-circle"></span>
+
+                </button>
+
+
+                <!-- TEMA 3 -->
+
+                <button
+                    class="theme-option"
+                    data-theme="computacao"
+                    type="button"
+                >
+
+                    <span class="theme-name">
+                        Erros da Computação
+                    </span>
+
+                    <span class="selection-circle"></span>
+
+                </button>
+
+
+                <!-- TEMA 4 -->
+
+                <button
+                    class="theme-option"
+                    data-theme="historia"
+                    type="button"
+                >
+
+                    <span class="theme-name">
+                        História da Computação
+                    </span>
+
+                    <span class="selection-circle"></span>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- ========================================
+                 MENSAGEM DE ERRO
+                 ======================================== -->
+
+            <p
+                id="error-message"
+                class="theme-error"
+                aria-live="polite"
+            ></p>
+
+
+            <!-- ========================================
+                 BOTÃO COMEÇAR
+                 ======================================== -->
+
+            <div class="theme-button-area">
+
+                <button
+                    id="start-button"
+                    type="button"
+                >
+                    começar
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript exclusivo da seleção de temas -->
+    <script src="temquiz.js"></script>
+
+</body>
+</html>

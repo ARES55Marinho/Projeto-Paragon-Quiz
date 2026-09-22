@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Adapta a tela para computadores e celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Paragon Quiz</title>
+
+    <!-- Conecta o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         CONTAINER PRINCIPAL DA TELA
+         ======================================== -->
+
+    <main class="quiz-container">
+
+
+        <!-- ========================================
+             CABEÇALHO ESCURO
+             ======================================== -->
+
+        <header class="quiz-header">
+
+            <!-- Título principal do quiz -->
+            <h1>Paragon Quiz</h1>
+
+        </header>
+
+
+        <!-- ========================================
+             ÁREA PRINCIPAL DO CONTEÚDO
+             ======================================== -->
+
+        <section class="quiz-content">
+
+
+            <!-- ========================================
+                 CAIXA DA PERGUNTA
+                 ======================================== -->
+
+            <div class="question-box">
+
+                <!-- Pergunta exibida ao jogador -->
+                <h2>como devemos te chamar?</h2>
+
+            </div>
+
+
+            <!-- ========================================
+                 CAIXA PARA DIGITAR O NOME
+                 ======================================== -->
+
+            <div class="name-box">
+
+                <!-- Texto de orientação -->
+                <label for="player-name">
+                    digite seu nome:
+                </label>
+
+
+                <!-- Campo de entrada do nome -->
+                <input
+                    type="text"
+                    id="player-name"
+                    placeholder="Seu nome"
+                    maxlength="30"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- ========================================
+                 ÁREA DO BOTÃO CONTINUAR
+                 ======================================== -->
+
+            <div class="button-area">
+
+                <!-- Botão para ir à próxima tela -->
+                <button
+                    id="continue-button"
+                    type="button"
+                >
+                    continuar
+                </button>
+
+            </div>
+
+
+            <!-- ========================================
+                 MENSAGEM DE ERRO
+                 ======================================== -->
+
+            <p
+                id="error-message"
+                class="error-message"
+                aria-live="polite"
+            ></p>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Conecta o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
