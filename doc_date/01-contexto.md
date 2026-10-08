@@ -30,16 +30,11 @@ Usuários. Quem usa o sistema e o que cada um faz com os dados. Não criem tabel
 
 ## 3. Requisitos e regras de negócio
 
-Cada RD01–RD11 e cada RA01–RA07 entra numa linha. Não deixem código de fora.
-
-
 | Código | Texto do requisito   | Tipo|
-| RD01| Cada tema tem suas prorpias perguntas      | Regra de negocio |
-| RD02 -RFN02| Não possui dois temas iguais         | Regra de negocio |
-| RD05| Apenas uma alternativa correta              | Regra de negocio |
-| RA02, RA04| Sorteia e corriges as questões        | Funcional        |
-| RD06| Futuramente queremos adcionar mais questões e mais variações | Funcional |
-| RD01| Registro de nome e ranking do jogador                 | Regras de negocio|
-| RNF01 | Criado com PostGris 4                     | Não Funcional     |
-
-Não funcional inclui, no mínimo, o SGBD e a integridade (o que não pode duplicar nem ficar nulo).
+| RD01| Cada tema tem suas prorpias perguntas       | Regra de negocio |
+| RD02-RFN02| Não possui dois temas iguais         | Regra de negocio |
+| RD03| Apenas uma alternativa correta              | Regra de negocio |
+| RF01, RF02| Sorteia e corriges as questões        | Funcional        |
+| RF03| Futuramente queremos adcionar mais questões e mais variações | Funcional |
+| RD04| Registro de nome e ranking do jogador       | Regras de negocio|
+| RNF01 | Criado com PostGris 4                     | Não Funcional    |
