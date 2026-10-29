@@ -19,7 +19,7 @@ Uma frase por linha, ligada a um requisito. Cardinalidade dos dois lados, mínim
 
 |Relacionamento|Cardinalidade|Justificativa|Requisito|
 |-|-|-|-|
-|Jogador->tema|1->N|o jogador pode escolher jogar novamente|RF\_01|
+|Jogador->tema|1->N|o jogador escolhe um tema e pode escolher jogar novamente ou outros|RF\_01|
 |tema->pergunta|1->10|cada tema terá 10 perguntas|RN\_01|
 |Pergunta->dificuldade|N->1|cada pergunta terá uma dificuldade diferente|RN\_02|
 |dificuldade->jogador|1->1|a dificuldade determina a pontuação do jogador|RN\_03|
