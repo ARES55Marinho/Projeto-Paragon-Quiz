@@ -10,6 +10,8 @@ O desenho parte do modelo conceitual e mostra tabelas, colunas, chave primária 
 |Jogador — Escolher/Escolhido — Tema|1:N 	o jogador escolhe um tema e pode escolher jogar novamente ou outros|Chave estrangeira|`Jogador.id_Tema` referencia `Tema.id_Tema`. Substitui o atributo textual `Tema_escolhido`.|
 |Tema — Contido/Conter — Pergunta|1:N (um Tema contém de 1 a 10 Perguntas; cada Pergunta pertence a um Tema)|Chave estrangeira|`Pergunta.id_Tema` referencia `Tema.id_Tema`.|
 |Pergunta — Contido/Conter — Dificuldade|N:N, cada grupo de perguntas terá uma dificuldade diferente|Chave estrangeira / tabela associativa|`Pergunta.id_Dificuldade` referencia `Dificuldade.id_Dificuldade`.|
+|Pergunta — Alternativa|1:N|Chave estrangeira|`Alternativa.id_Pergunta` referencia `Pergunta.id_Pergunta`.|
+
 
 
 ## Normalização
