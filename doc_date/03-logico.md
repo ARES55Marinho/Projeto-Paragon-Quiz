@@ -39,5 +39,10 @@ O desenho parte do modelo conceitual e mostra tabelas, colunas, chave primária 
 |Coluna|Tipo e tamanho|Nulo|Restrição|Descrição|
 |-|-|-|-|-|
 |`id_jogador`|int4|NOT NULL|PK|Identificador único do jogador.|
+|`Nome`|VARCHAR(80)|NOT NULL|—|Nome do jogador.|
+|`Rank`|numeric|NOT NULL|CHECK (`Rank` >= 0)|Posição ou classificação do jogador.|
+|`Pontos`|numeric|NOT NULL|DEFAULT 0; CHECK (`Pontos` >= 0)|Quantidade de pontos do jogador.|
+|`id_Tema`|varchar|NOT NULL|FK → `Tema.id_Tema`|Tema escolhido pelo jogador.|
+
 
 
