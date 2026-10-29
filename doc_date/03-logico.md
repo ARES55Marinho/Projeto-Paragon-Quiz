@@ -6,7 +6,7 @@ O desenho parte do modelo conceitual e mostra tabelas, colunas, chave primária 
 ## 5. Modelo lógico
 
 |Relacionamento no DER|Cardinalidade|Vira|Onde fica a FK ou a tabela associativa|
-|-|-|-|
+|-|-|-|-|
 |Jogador — Escolher/Escolhido — Tema|1:N 	o jogador escolhe um tema e pode escolher jogar novamente ou outros|Chave estrangeira|`Jogador.id_Tema` referencia `Tema.id_Tema`. Substitui o atributo textual `Tema_escolhido`.|
 |dificuldade|id da dificuldade, pontuação, nome da dificuldade|Id\_dificuldade|
 |pergunta|Alternativas, respostas, id da pergunta, id do tema e id da dificuldade|id da pergunta, id do tema e id da dificuldade|
