@@ -44,6 +44,12 @@ O desenho parte do modelo conceitual e mostra tabelas, colunas, chave primária 
 |`Pontos`|numeric|NOT NULL|DEFAULT 0; CHECK (`Pontos` >= 0)|Quantidade de pontos do jogador.|
 |`id_Tema`|varchar|NOT NULL|FK → `Tema.id_Tema`|Tema escolhido pelo jogador.|
 
+### Tabela: Tema
+|Coluna|Tipo e tamanho|Nulo|Restrição|Descrição|
+|-|-|-|-|-|
+|`id_Tema`|VARCHAR(80)|NOT NULL|PK|Identificador único do tema.|
+|`Nome_Tema`|VARCHAR(100)|NOT NULL|—|Nome do tema.|
+
 
 ### Tabela: Pergunta
 |Coluna|Tipo e tamanho|Nulo|Restrição|Descrição|
@@ -52,6 +58,25 @@ O desenho parte do modelo conceitual e mostra tabelas, colunas, chave primária 
 |`Texto_Pergunta`|VARCHAR(300)|NOT NULL|—|Enunciado da pergunta.|
 |`id_Tema`|VARCHAR(80)|NOT NULL|FK → `Tema.id_Tema`|Tema ao qual a pergunta pertence.|
 |`id_Dificuldade`|VARCHAR(80)|NOT NULL|FK → `Dificuldade.id_Dificuldade`|Dificuldade associada à pergunta.|
+|`id_Alternativa`|VARCHAR(80)|NOT NULL|FK → `Alternativas.id_Alternativa`|Alternativa associada á pergunta.|
+
+### Tabela: Dificuldade
+|Coluna|Tipo e tamanho|Nulo|Restrição|Descrição|
+|-|-|-|-|-|
+|`id_Dificuldade`|VARCHAR(80)|NOT NULL|PK|Identificador único da dificuldade.|
+|`Nome_Dificuldade`|VARCHAR(80)|NOT NULL|—|Nome ou nível da dificuldade.|
+|`Valor_pontos`|numeric|NOT NULL|CHECK (`Valor_pontos` >= 0)|Pontuação atribuída à dificuldade.|
+
+### Tabela: Alternativas
+|Coluna|Tipo e tamanho|Nulo|Restrição|Descrição|
+|-|-|-|-|-|
+|`id_Alternativa`|INT(80)|NOT NULL|PK|Identificador único da alternativa.|
+|`alternativa_a`|VARCHAR(100)|NOT NULL|—|Alternativa A, (podendo ser verdadeiro ou falso).|
+|`alternativa_b`|VARCHAR(100)|NOT NULL|—|Alternativa B, (podendo ser verdadeiro ou falso).|
+|`alternativa_c`|VARCHAR(100)|NULL|—|Alternativa C.|
+|`alternativa_d`|VARCHAR(100)|NULL|—|Alternativa D.|
+|`Resposta`|numeric|NOT NULL|-|Resposta correta da pergunta.|
+
 
 
 
