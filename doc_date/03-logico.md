@@ -45,4 +45,14 @@ O desenho parte do modelo conceitual e mostra tabelas, colunas, chave primária 
 |`id_Tema`|varchar|NOT NULL|FK → `Tema.id_Tema`|Tema escolhido pelo jogador.|
 
 
+### Tabela: Pergunta
+|Coluna|Tipo e tamanho|Nulo|Restrição|Descrição|
+|-|-|-|-|-|
+|`id_Pergunta`|int4|NOT NULL|PK|Identificador único da pergunta.|
+|`Texto_Pergunta`|VARCHAR(300)|NOT NULL|—|Enunciado da pergunta.|
+|`id_Tema`|VARCHAR(80)|NOT NULL|FK → `Tema.id_Tema`|Tema ao qual a pergunta pertence.|
+|`id_Dificuldade`|VARCHAR(80)|NOT NULL|FK → `Dificuldade.id_Dificuldade`|Dificuldade associada à pergunta.|
+
+
+
 
