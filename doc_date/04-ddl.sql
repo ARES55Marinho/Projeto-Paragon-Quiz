@@ -1,5 +1,5 @@
 -- Passo 7 — Modelo físico
--- Equipe:
+-- Equipe: Dhavi Francisco do Vale Ferreira, Hiago da Silva Marinho, Matheus Henrique Barros da Silva, Samuel Domingues. 
 -- PostgreSQL. Por que este SGBD:
 -- Contrato com Aplicativos para Web: os nomes abaixo são os acordados.
 -- Banco vazio:
