@@ -21,7 +21,7 @@ Uma frase por linha, ligada a um requisito. Cardinalidade dos dois lados, mínim
 |-|-|-|-|
 |Jogador->tema|1->N|o jogador escolhe um tema e pode escolher jogar novamente ou outros|RF\_01|
 |tema->pergunta|1->10|cada tema terá 10 perguntas|RN\_01|
-|Pergunta->dificuldade|N->1|cada pergunta terá uma dificuldade diferente|RN\_02|
+|Pergunta->dificuldade|N->N|cada grupo de perguntas terá uma dificuldade diferente|RN\_02|
 |dificuldade->jogador|1->1|a dificuldade determina a pontuação do jogador|RN\_03|
 
 O diagrama e esta tabela descrevem o mesmo modelo. Toda entidade do desenho está na tabela.
