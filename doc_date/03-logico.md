@@ -9,4 +9,14 @@ O desenho parte do modelo conceitual e mostra tabelas, colunas, chave primária 
 |-|-|-|-|
 |Jogador — Escolher/Escolhido — Tema|1:N 	o jogador escolhe um tema e pode escolher jogar novamente ou outros|Chave estrangeira|`Jogador.id_Tema` referencia `Tema.id_Tema`. Substitui o atributo textual `Tema_escolhido`.|
 |Tema — Contido/Conter — Pergunta|1:N (um Tema contém de 1 a 10 Perguntas; cada Pergunta pertence a um Tema)|Chave estrangeira|`Pergunta.id_Tema` referencia `Tema.id_Tema`.|
-|Pergunta — Contido/Conter — Dificuldade|N:N, cada grupo de perguntas terá uma dificuldade diferente|Chave estrangeira|`Pergunta.id_Dificuldade` referencia `Dificuldade.id_Dificuldade`.|
+|Pergunta — Contido/Conter — Dificuldade|N:N, cada grupo de perguntas terá uma dificuldade diferente|Chave estrangeira / tabela associativa|`Pergunta.id_Dificuldade` referencia `Dificuldade.id_Dificuldade`.|
+
+
+## Normalização
+
+|ID|Dependência|Requisito|
+|-|-|-|
+|DF1|`Jogador.id_jogador → Jogador.Nome, Jogador.Rank, Jogador.Pontos, Jogador.id_Tema`|O identificador de um jogador determina seus dados e o tema que escolheu.|
+|DF2|`Tema.id_Tema → Tema.Nome_Tema`|O identificador de um tema determina seu nome.|
+|DF3|`Pergunta.id_Pergunta → Pergunta.Texto_Pergunta, Pergunta.Alternativas, Pergunta.id_Tema, Pergunta.id_Dificuldade, Pergunta.Resposta`|O identificador de uma pergunta determina seus dados, seu tema e sua dificuldade.|
+|DF4|`Dificuldade.id_Dificuldade → Dificuldade.Nome_Dificuldade, Dificuldade.Valor_pontos`|O identificador da dificuldade determina seu nome e a pontuação associada.|
