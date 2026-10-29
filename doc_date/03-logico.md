@@ -24,6 +24,11 @@ O desenho parte do modelo conceitual e mostra tabelas, colunas, chave primária 
 
 |Forma|Por que o esquema atende|Tabela em que isso aparece|
 |-|-|-|
-|1FN|Os atributos devem conter valores atômicos. `Alternativas` pode representar várias opções; se guardar várias alternativas juntas em um único campo, será necessário separá-las em registros próprios.|`Pergunta`; recomenda-se criar a tabela `Alternativa` se cada pergunta tiver várias opções.|
+|1FN|Cada coluna guarda um único valor. As alternativas são armazenadas em colunas separadas (Alternativa_A, Alternativa_B, Alternativa_C e Alternativa_D), em vez de reunir várias opções em um único campo.|`Pergunta`; recomenda-se criar a tabela `Alternativa` se cada pergunta tiver várias opções.|
 |2FN|As tabelas propostas usam uma única coluna como chave primária; portanto, não há chave primária composta e não se aplica dependência parcial de parte da chave.|`Jogador`, `Tema`, `Pergunta`, `Dificuldade` e, se criada, `Alternativa`.|
 |3FN|Os atributos não-chave dependem da chave primária da própria tabela. Os dados do tema e da dificuldade ficam em tabelas próprias e são referenciados por FKs, evitando repetir seus nomes e pontuações em cada pergunta ou jogador.|Todas as tabelas.|
+
+
+## 6. Dicionário de dados
+
+### Tabela: Jogador
