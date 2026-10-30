@@ -12,6 +12,7 @@ Marco M1. A entrega deste passo é o modelo conceitual: o desenho em `entregas/0
 |dificuldade|id da dificuldade, pontuação, nome da dificuldade|Id\_dificuldade|
 |pergunta|Alternativas, respostas, id da pergunta, id do tema e id da dificuldade|id da pergunta, id do tema e id da dificuldade|
 |usuário|Nome, pontuação, id do usuário|Id\_usuário|
+|Alternativa|id da Alternativa, alternativa_A, alternativa_B, alternativa_C, alternativa_D e Resposta|id\_Alternativa|
 
 ## Relacionamentos
 
@@ -23,6 +24,7 @@ Uma frase por linha, ligada a um requisito. Cardinalidade dos dois lados, mínim
 |tema->pergunta|1->10|cada tema terá 10 perguntas|RN\_01|
 |Pergunta->dificuldade|N->N|cada grupo de perguntas terá uma dificuldade diferente|RN\_02|
 |dificuldade->jogador|1->1|a dificuldade determina a pontuação do jogador|RN\_03|
+|Pergunta->Alternativa|1->N|cada grupo de perguntas terá de 2 a 4 alternativas|RN\_02|
 
 O diagrama e esta tabela descrevem o mesmo modelo. Toda entidade do desenho está na tabela.
 
