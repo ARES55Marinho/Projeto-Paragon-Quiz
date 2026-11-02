@@ -125,3 +125,51 @@ VALUES (30, 'A) O programa sempre imprime -2147483648, pois os inteiros dão a v
 
   
 ## História da Computação
+  
+/** Perguntas de História da Computação **/
+
+INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
+
+(41, 'Qual destes objetos era usado para fazer cálculos muito antes dos computadores existirem?', 3, 1, 41),
+(42, 'Quem é conhecido como o criador da World Wide Web (WWW)?', 3, 1, 42),
+(43, 'O que significa a sigla PC?', 3, 1, 43),
+(44, 'Qual empresa é responsável pela criação do sistema operacional Windows?', 3, 1, 44),
+(45, 'Quem é considerada a primeira programadora da história?', 3, 1, 45),
+(46, 'Qual dispositivo substituiu as válvulas e permitiu computadores menores e mais rápidos?', 3, 3, 46),
+(47, 'Qual destes é um sistema operacional?', 3, 3, 47),
+(48, 'Qual empresa desenvolveu o primeiro processador comercial da história, o Intel 4004?', 3, 3, 48),
+(49, 'Qual era a principal função do ENIAC?', 3, 3, 49),
+(50, 'Qual foi a principal inovação teórica da Máquina Analítica de Charles Babbage?', 3, 4, 50);
+  
+/** Alternativas de História da Computação **/
+
+INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES
+(41, 'Mouse', 'Ábaco', 'Pendrive', 'Monitor', 2,
+'O ábaco é uma das ferramentas de cálculo mais antigas da humanidade, utilizado milhares de anos antes dos computadores modernos.'),
+
+(42, 'Bill Gates', 'Steve Jobs', 'Tim Berners-Lee', 'Linus Torvalds', 3,
+'Tim Berners-Lee criou a World Wide Web (WWW), sistema que permitiu a navegação por páginas interligadas na internet.'),
+
+(43, 'Personal Computer', 'Program Computer', 'Power Computer', 'Primary Computer', 1,
+'PC significa Personal Computer (Computador Pessoal), termo utilizado para computadores destinados ao uso individual.'),
+
+(44, 'Apple', 'Google', 'Microsoft', 'IBM', 3,
+'A Microsoft desenvolveu o sistema operacional Windows, um dos mais utilizados do mundo.'),
+
+(45, 'Grace Hopper', 'Ada Lovelace', 'Margaret Hamilton', 'Katherine Johnson', 2,
+'Ada Lovelace é considerada a primeira programadora da história por ter desenvolvido algoritmos para a Máquina Analítica de Charles Babbage.'),
+
+(46, 'Teclado', 'Transistor', 'Mouse', 'Scanner', 2,
+'O transistor substituiu as válvulas eletrônicas, permitindo a criação de computadores menores, mais rápidos e mais confiáveis.'),
+
+(47, 'Excel', 'Chrome', 'Windows', 'Intel', 3,
+'Windows é um sistema operacional. Excel é um aplicativo, Chrome é um navegador e Intel é uma fabricante de processadores.'),
+
+(48, 'IBM', 'Microsoft', 'Intel', 'Apple', 3,
+'A Intel desenvolveu o Intel 4004, considerado o primeiro microprocessador comercial da história.'),
+
+(49, 'Navegar na internet', 'Realizar cálculos complexos', 'Criar sites', 'Armazenar fotos', 2,
+'O ENIAC foi um dos primeiros computadores eletrônicos de uso geral e foi projetado principalmente para realizar cálculos complexos.'),
+
+(50, 'Uso de energia elétrica', 'Capacidade de armazenar programas e executar instruções', 'Conexão entre computadores por rede', 'Uso de transistores para processamento', 2,
+'A Máquina Analítica de Charles Babbage introduziu conceitos fundamentais dos computadores modernos, como o armazenamento de instruções e a execução programável de operações.');
