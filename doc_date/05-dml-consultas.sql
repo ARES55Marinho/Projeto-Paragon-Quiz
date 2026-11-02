@@ -17,7 +17,52 @@ insert into dificuldade(id_dificuldade, Nome_dificuldade, valor_pontos) VALUES
 
   
 ## Hack em Geral
+INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES
+(31, 'Trojan', 'Firewall', 'Driver', 'Compiler', 1,
+'Um Trojan, também conhecido como Cavalo de Troia, é um programa malicioso que se disfarça de software legítimo para enganar o usuário e executar ações prejudiciais.'),
 
+(32, 'Um sistema que traduz linguagens de programação', 'Um sistema que monitora e controla o tráfego de rede',
+'Um programa que aumenta a velocidade do processador', 'Um dispositivo que recupera arquivos apagados', 2,
+'O firewall monitora e controla o tráfego de rede, podendo bloquear conexões suspeitas ou não autorizadas para ajudar a proteger o sistema.'),
+
+(33, 'Phishing', 'Overclock', 'Desfragmentação', 'Criptografia', 1,
+'Phishing é um golpe no qual o criminoso se passa por uma pessoa ou organização confiável para enganar a vítima e obter informações confidenciais.'),
+
+(34, 'Compartilhar a senha com amigos', 'Utilizar a mesma senha em vários sites',
+'Desativar a autenticação em dois fatores para evitar etapas extras no login', 'Utilizar senhas fortes e diferentes para cada conta', 4,
+'Utilizar senhas fortes e exclusivas para cada conta dificulta invasões e impede que uma senha descoberta em um serviço seja utilizada para acessar outras contas.'),
+
+(35, 'Modificar permissões de arquivos localmente', 'Descobrir a senha de um usuário por tentativa e erro',
+'Indisponibilizar um serviço sobrecarregando-o com tráfego', 'Criptografar arquivos do usuário', 3,
+'Um ataque DDoS busca tornar um serviço indisponível ao sobrecarregá-lo com uma grande quantidade de tráfego proveniente de diferentes dispositivos.'),
+
+(36, 'Aumentar a velocidade de uma conexão de internet.', 'Executar programas em um ambiente isolado para limitar possíveis danos ao sistema principal.',
+'Permitir que qualquer programa tenha acesso administrativo.', 'Remover automaticamente todas as senhas de um computador.', 2,
+'Sandboxing permite executar programas em um ambiente isolado, reduzindo o risco de que atividades maliciosas afetem o restante do sistema.'),
+
+(37, 'Quando um servidor recebe conexões de diferentes países', 'Quando um banco de dados realiza consultas simultâneas',
+'Quando um programa utiliza toda a capacidade de armazenamento do disco', 'Quando dados excedem a capacidade de um buffer e podem sobrescrever áreas adjacentes da memória', 4,
+'Buffer Overflow acontece quando um programa recebe mais dados do que um buffer consegue armazenar, podendo sobrescrever regiões próximas da memória e causar falhas ou permitir a execução de código malicioso.'),
+
+(38, 'Verdadeiro', 'Falso', NULL, NULL, 1,
+'Utilizar a mesma senha em vários sites aumenta os riscos porque, se um serviço sofrer um vazamento, criminosos poderão tentar utilizar essa senha para acessar outras contas.'),
+
+(39, 'Verdadeiro', 'Falso', NULL, NULL, 2,
+'Um ataque de força bruta tenta descobrir senhas testando diversas combinações possíveis, e não apenas o mínimo de combinações.'),
+
+(40, 'Verdadeiro', 'Falso', NULL, NULL, 2, 'HTTPS protege a comunicação entre o navegador e o site por meio de criptografia, mas não garante que o próprio site seja confiável ou esteja livre de golpes.');
+
+INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
+(31, 'Qual é o nome dado a um programa malicioso que se disfarça de software legítimo para enganar o usuário?', 4, 1, 31),
+(32, 'O que é um firewall em um computador ou rede?', 4, 1, 32),
+(33, 'Utilizar a mesma senha em vários sites aumenta o risco caso um desses serviços sofra um vazamento de dados.', 4, 1, 38),
+(34, 'Como é chamado o golpe em que alguém se passa por uma empresa ou pessoa confiável para roubar informações?', 4, 1, 33),
+(35, 'Um ataque de força bruta tenta descobrir uma senha testando o mínimo de combinações possíveis.', 4, 2, 39),
+(36, 'Quais destas práticas ajudam a proteger uma conta contra invasões?', 4, 2, 34),
+(37, 'Qual é a principal finalidade de um ataque DDoS?', 4, 2, 35),
+(38, 'Uma conexão HTTPS garante que um site seja legítimo e não possa ser utilizado para aplicar golpes.', 4, 3, 40),
+(39, 'Qual é a finalidade de uma técnica chamada "Sandboxing" em segurança?', 4, 3, 36),
+(40, 'Em segurança de memória, o que é um ataque de Buffer Overflow?', 4, 4, 37);
   
 ## Erros da Computação
 /**Perguntas de Erros da Computação **/
