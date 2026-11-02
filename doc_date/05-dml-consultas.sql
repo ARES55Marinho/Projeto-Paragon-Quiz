@@ -22,41 +22,22 @@ insert into dificuldade(id_dificuldade, Nome_dificuldade, valor_pontos) VALUES
 ## Erros da Computação
 /**Perguntas de Erros da Computação **/
 
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (21, 'O termo bug, se originou quando encontraram um inseto dentro de um computador?', '3', '1', 21);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (22, 'Nas linguagens de programação podemos colocar números no início do nome das variáveis? Como 1nota e 2nota?', '3', '1', 22);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (23, 'Um erro de programação pode fazer um programa funcionar corretamente, mas apresentar resultados errados?', '3', '1', 23);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (24, 'Se um código apresenta um erro de sintaxe, significa que a lógica do programa está necessariamente errada?', '3', '1', 24);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (25, 'O que acontece quando um programa tenta acessar uma posição inexistente de um vetor?', '3', '2', 25);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (26, 'O famoso bug do processador Pentium, descoberto em 1994, fazia com que determinados cálculos de divisão produzissem resultados incorretos. A Intel corrigiu o problema simplesmente atualizando o sistema operacional dos computadores afetados. Verdadeiro ou falso?', '3', '2', 26);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (27, 'O problema do ano 2000 (Bug do Milênio) aconteceu porque todos os computadores do mundo interpretavam o ano 2000 como 1900.
+INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
+(21, 'O termo bug, se originou quando encontraram um inseto dentro de um computador?', '3', '1', 21);
+(22, 'Nas linguagens de programação podemos colocar números no início do nome das variáveis? Como 1nota e 2nota?', '3', '1', 22);
+(23, 'Um erro de programação pode fazer um programa funcionar corretamente, mas apresentar resultados errados?', '3', '1', 23);
+(24, 'Se um código apresenta um erro de sintaxe, significa que a lógica do programa está necessariamente errada?', '3', '1', 24);
+(25, 'O que acontece quando um programa tenta acessar uma posição inexistente de um vetor?', '3', '2', 25);
+(26, 'O famoso bug do processador Pentium, descoberto em 1994, fazia com que determinados cálculos de divisão produzissem resultados incorretos. A Intel corrigiu o problema simplesmente atualizando o sistema operacional dos computadores afetados. Verdadeiro ou falso?', '3', '2', 26);
+(27, 'O problema do ano 2000 (Bug do Milênio) aconteceu porque todos os computadores do mundo interpretavam o ano 2000 como 1900.
 Verdadeiro ou falso?', '3', '2', 27);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (28, 'Um programa entra em um loop infinito devido a um erro de programação. Qual das alternativas descreve melhor essa situação?', '3', '3', 28);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (29, 'Em programação, um programa pode apresentar um erro que desaparece quando o desenvolvedor tenta investigá-lo usando ferramentas de depuração (debugging). Verdadeiro ou falso?', '3', '3', 29);
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa)
-VALUES (30, 'Um programa escrito em C apresenta o seguinte código:
+(28, 'Um programa entra em um loop infinito devido a um erro de programação. Qual das alternativas descreve melhor essa situação?', '3', '3', 28);
+(29, 'Em programação, um programa pode apresentar um erro que desaparece quando o desenvolvedor tenta investigá-lo usando ferramentas de depuração (debugging). Verdadeiro ou falso?', '3', '3', 29);
+(30, 'Um programa escrito em C apresenta o seguinte código:
 int x = 2147483647;
 x = x + 1;
 printf("%d", x);
 Considerando uma implementação comum em que int é um inteiro de 32 bits com sinal, qual afirmação está correta segundo o padrão da linguagem C?', '3', '4', 30);
-
 /**Alternativas de Erros da Computação **/
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa)
