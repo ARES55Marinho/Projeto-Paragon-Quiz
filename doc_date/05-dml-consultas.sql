@@ -1,3 +1,8 @@
+/* INSERT dos temas */
+
+  
+/* INSERT das dificuldades */
+
 ## Diferenças de linguagens de Programação
 
   
