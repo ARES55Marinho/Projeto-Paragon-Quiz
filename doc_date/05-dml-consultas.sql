@@ -38,33 +38,26 @@ int x = 2147483647;
 x = x + 1;
 printf("%d", x);
 Considerando uma implementação comum em que int é um inteiro de 32 bits com sinal, qual afirmação está correta segundo o padrão da linguagem C?', '3', '4', 30);
+
 /**Alternativas de Erros da Computação **/
 
-INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa)
-VALUES (21, 'Verdadeiro', 'falso', 2, 'Falso: o caso realmente aconteceu, acharam uma mariposa causando problemas na máquina, mas o termo já era usado muito antes do ocorrido.');
+INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa) VALUES 
+(21, 'Verdadeiro', 'falso', 2, 'Falso: o caso realmente aconteceu, acharam uma mariposa causando problemas na máquina, mas o termo já era usado muito antes do ocorrido.');
+(22, 'Verdadeiro', 'falso', 2, 'Falso:A maioria das linguagens de programação permite colocar números nos nomes das variáveis, mas geralmente não permite que o nome comece com um número.');
+(23, 'Verdadeiro', 'falso', 1, 'Verdadeiro: Um programa pode executar sem travar e ainda conter erros lógicos, como uma fórmula de soma que, por engano, realiza uma subtração.');
+(24, 'Verdadeiro', 'falso', 2, 'Falso:Um erro de sintaxe acontece quando o código desrespeita as regras da linguagem. A lógica pode estar correta, mas o programa não consegue ser interpretado ou compilado até que o problema seja corrigido.');
 
-INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa)
-VALUES (22, 'Verdadeiro', 'falso', 2, 'Falso:A maioria das linguagens de programação permite colocar números nos nomes das variáveis, mas geralmente não permite que o nome comece com um número.');
-
-INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa)
-VALUES (23, 'Verdadeiro', 'falso', 1, 'Verdadeiro: Um programa pode executar sem travar e ainda conter erros lógicos, como uma fórmula de soma que, por engano, realiza uma subtração.');
-
-INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa)
-VALUES (24, 'Verdadeiro', 'falso', 2, 'Falso:Um erro de sintaxe acontece quando o código desrespeita as regras da linguagem. A lógica pode estar correta, mas o programa não consegue ser interpretado ou compilado até que o problema seja corrigido.');
-
-INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa)
-VALUES (25, 'A) O computador sempre desliga automaticamente.',
+INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES 
+(25, 'A) O computador sempre desliga automaticamente.',
  'B) O programa pode apresentar um erro ou comportamento inesperado.',
  'C) A linguagem de programação corrige automaticamente o código.', 
  'D) O vetor aumenta de tamanho obrigatoriamente.',
 2,
    'O comportamento depende da linguagem. Em algumas, o acesso inválido gera uma exceção; em C, por exemplo, acessar uma posição fora dos limites de um vetor pode causar comportamento indefinido.');
 
-INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa)
-VALUES (26, 'Verdadeiro', 'falso', 2, 'Falso:O problema estava no próprio hardware do processador, mais especificamente na unidade de divisão de ponto flutuante. A correção definitiva exigia substituir os processadores defeituosos, embora soluções de software pudessem contornar o problema em algumas situações.');
-
-INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa)
-VALUES (27, 'Verdadeiro', 'falso', 2, 'Falso:O problema afetava principalmente sistemas que armazenavam anos com apenas dois dígitos. Assim, o ano 2000 podia ser interpretado como 00 e confundido com 1900, dependendo das regras utilizadas pelo sistema. Nem todos os computadores foram afetados.');
+INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa) VALUES 
+(26, 'Verdadeiro', 'falso', 2, 'Falso:O problema estava no próprio hardware do processador, mais especificamente na unidade de divisão de ponto flutuante. A correção definitiva exigia substituir os processadores defeituosos, embora soluções de software pudessem contornar o problema em algumas situações.');
+(27, 'Verdadeiro', 'falso', 2, 'Falso:O problema afetava principalmente sistemas que armazenavam anos com apenas dois dígitos. Assim, o ano 2000 podia ser interpretado como 00 e confundido com 1900, dependendo das regras utilizadas pelo sistema. Nem todos os computadores foram afetados.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa)
 VALUES (28, 'A) O programa executa um bloco de código repetidamente sem atingir uma condição de parada.',
