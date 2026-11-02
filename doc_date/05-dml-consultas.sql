@@ -1,7 +1,17 @@
 /* INSERT dos temas */
+insert into tema(id_tema, nome_tema) VALUES
+(1, 'Diferenças de linguagens de programação'),
+(2, 'Erros de computação'),
+(3, 'Historia da computação'),
+(4, 'Hack em geral');
 
   
 /* INSERT das dificuldades */
+insert into dificuldade(id_dificuldade, Nome_dificuldade, valor_pontos) VALUES
+(1, 'Fácil', 5),
+(2, 'Médio', 8),
+(3, 'Difícil', 12),
+(4, 'Extremo', 20);
 
 ## Diferenças de linguagens de Programação
 
