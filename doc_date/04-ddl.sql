@@ -31,7 +31,8 @@ CREATE TABLE alternativa (
     alternativa_b VARCHAR(100) NOT NULL,
     alternativa_c VARCHAR(100),
     alternativa_d VARCHAR(100),
-    resposta NUMERIC NOT NULL
+    resposta NUMERIC NOT NULL,
+    justificativa VARCHAR(100)
 );
 
 CREATE TABLE jogador (
