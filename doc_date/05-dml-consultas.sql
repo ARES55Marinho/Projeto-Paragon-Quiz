@@ -28,7 +28,21 @@ INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_a
 (9, 'Qual é a principal diferença entre HTML e JavaScript?', 1, 2,9),
 (10, 'O que é uma linguagem com tipagem gradual?', 1, 4, 10);
 
-/** Alternativas de História da Computação **/
+/** Alternativas de linguagens de progamação **/
+INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES
+(1, 'Java', 'C', 'Python', 'JavaScript', 3, 'A extensão .py identifica arquivos de código Python.'),[
+(2, 'C++', 'Java', 'C', 'Python', 3, 'A extensão .c identifica arquivos de código C.'),
+(3, 'CSS', 'SQL', 'HTML', 'Swift', 2, 'SQL é utilizada para consultar informações em bancos de dados.'),
+(4, 'JavaScript', 'Python', 'HTML', 'C#', 3, 'HTML define a estrutura e o conteúdo de páginas web.'),
+(5, 'Criar interfaces gráficas.', 'Desenvolver jogos 3D.', 'Manipular e consultar bancos de dados relacionais.', 'Controlar diretamente o hardware.', 3, 'SQL permite criar, consultar e modificar bancos de dados.'),
+(6, 'Python', 'Java', 'C', 'JavaScript', 3, 'A linguagem C utiliza #include para adicionar bibliotecas.'),
+(7, 'C', 'HTML', 'CSS', 'SQL', 1, 'C permite utilizar ponteiros para acessar endereços de memória.'),
+(8, 'Armazenar informações em bancos de dados.', 'Traduzir código-fonte para outra representação executável ou intermediária.', 'Criar automaticamente interfaces gráficas.', 'Controlar exclusivamente a memória RAM.', 2, 
+'O compilador traduz o código-fonte para outra representação.'),
+(9, 'HTML estrutura o conteúdo da página, enquanto JavaScript adiciona comportamentos e interatividade.', 'HTML controla bancos de dados, enquanto JavaScript cria sistemas operacionais.',
+'JavaScript serve apenas para estilizar páginas.', 'HTML é utilizado exclusivamente para inteligência artificial.', 1, 'HTML estrutura o conteúdo e JavaScript adiciona interatividade.'),
+(10, 'Uma linguagem que não possui tipos.', 'Uma linguagem que permite combinar partes com tipagem estática e partes com tipagem dinâmica.', 'Uma linguagem que altera automaticamente a velocidade do processador.',
+'Uma linguagem que exige que todas as variáveis sejam globais.', 2, 'A tipagem gradual combina tipagem estática e dinâmica.');
 
 
 ## Hack em Geral
