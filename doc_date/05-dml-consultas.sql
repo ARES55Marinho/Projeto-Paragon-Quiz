@@ -15,7 +15,22 @@ insert into dificuldade(id_dificuldade, Nome_dificuldade, valor_pontos) VALUES
 
 ## Diferenças de linguagens de Programação
 
-  
+/**Perguntas de linguagens de Programação **/
+INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
+(1, 'Qual linguagem utiliza a extensão .py em seus arquivos?', 1, 1, 1),
+(2, 'Qual linguagem utiliza a extensão .c em seus arquivos?', 1, 1, 2),
+(3, 'Qual destas linguagens é utilizada para consultar informações em bancos de dados?', 1, 1, 3),
+(4, 'Qual destas linguagens é utilizada principalmente para definir a estrutura e o conteúdo de uma página web?', 1, 1, 4),
+(5, 'Qual é a principal finalidade da linguagem SQL?', 1, 2, 5),
+(6, 'Em qual linguagem é comum utilizar #include para adicionar bibliotecas?', 1, 2, 6),
+(7, 'Qual destas linguagens permite manipulação direta de memória por meio de ponteiros?', 1, 3, 7),
+(8, 'Qual é a função principal de um compilador?', 1, 3, 8),
+(9, 'Qual é a principal diferença entre HTML e JavaScript?', 1, 2,9),
+(10, 'O que é uma linguagem com tipagem gradual?', 1, 4, 10);
+
+/** Alternativas de História da Computação **/
+
+
 ## Hack em Geral
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES
 (31, 'Trojan', 'Firewall', 'Driver', 'Compiler', 1,
