@@ -97,32 +97,32 @@ INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_a
 /**Perguntas de Erros da Computação **/
 
 INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
-(21, 'O termo bug, se originou quando encontraram um inseto dentro de um computador?', '3', '1', 21);
-(22, 'Nas linguagens de programação podemos colocar números no início do nome das variáveis? Como 1nota e 2nota?', '3', '1', 22);
-(23, 'Um erro de programação pode fazer um programa funcionar corretamente, mas apresentar resultados errados?', '3', '1', 23);
-(24, 'Se um código apresenta um erro de sintaxe, significa que a lógica do programa está necessariamente errada?', '3', '1', 24);
-(25, 'O que acontece quando um programa tenta acessar uma posição inexistente de um vetor?', '3', '2', 25);
-(26, 'O famoso bug do processador Pentium, descoberto em 1994, fazia com que determinados cálculos de divisão produzissem resultados incorretos. A Intel corrigiu o problema simplesmente atualizando o sistema operacional dos computadores afetados. Verdadeiro ou falso?', '3', '2', 26);
-(27, 'O problema do ano 2000 (Bug do Milênio) aconteceu porque todos os computadores do mundo interpretavam o ano 2000 como 1900.
-Verdadeiro ou falso?', '3', '2', 27);
-(28, 'Um programa entra em um loop infinito devido a um erro de programação. Qual das alternativas descreve melhor essa situação?', '3', '3', 28);
-(29, 'Em programação, um programa pode apresentar um erro que desaparece quando o desenvolvedor tenta investigá-lo usando ferramentas de depuração (debugging). Verdadeiro ou falso?', '3', '3', 29);
-(30, 'Um programa escrito em C apresenta o seguinte código:
+(11, 'O termo bug, se originou quando encontraram um inseto dentro de um computador?', '2', '1', 11);
+(12, 'Nas linguagens de programação podemos colocar números no início do nome das variáveis? Como 1nota e 2nota?', '2', '1', 12);
+(13, 'Um erro de programação pode fazer um programa funcionar corretamente, mas apresentar resultados errados?', '2', '1', 13);
+(14, 'Se um código apresenta um erro de sintaxe, significa que a lógica do programa está necessariamente errada?', '2', '1', 14);
+(15, 'O que acontece quando um programa tenta acessar uma posição inexistente de um vetor?', '2', '2', 15);
+(16, 'O famoso bug do processador Pentium, descoberto em 1994, fazia com que determinados cálculos de divisão produzissem resultados incorretos. A Intel corrigiu o problema simplesmente atualizando o sistema operacional dos computadores afetados. Verdadeiro ou falso?', '3', '2', 16);
+(17, 'O problema do ano 2000 (Bug do Milênio) aconteceu porque todos os computadores do mundo interpretavam o ano 2000 como 1900.
+Verdadeiro ou falso?', '2', '2', 17);
+(18, 'Um programa entra em um loop infinito devido a um erro de programação. Qual das alternativas descreve melhor essa situação?', '2', '3', 18);
+(19, 'Em programação, um programa pode apresentar um erro que desaparece quando o desenvolvedor tenta investigá-lo usando ferramentas de depuração (debugging). Verdadeiro ou falso?', '2', '3', 19);
+(20, 'Um programa escrito em C apresenta o seguinte código:
 int x = 2147483647;
 x = x + 1;
 printf("%d", x);
-Considerando uma implementação comum em que int é um inteiro de 32 bits com sinal, qual afirmação está correta segundo o padrão da linguagem C?', '3', '4', 30);
+Considerando uma implementação comum em que int é um inteiro de 32 bits com sinal, qual afirmação está correta segundo o padrão da linguagem C?', '2', '4', 20);
 
 /**Alternativas de Erros da Computação **/
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa) VALUES 
-(21, 'Verdadeiro', 'falso', 2, 'Falso: o caso realmente aconteceu, acharam uma mariposa causando problemas na máquina, mas o termo já era usado muito antes do ocorrido.');
-(22, 'Verdadeiro', 'falso', 2, 'Falso:A maioria das linguagens de programação permite colocar números nos nomes das variáveis, mas geralmente não permite que o nome comece com um número.');
-(23, 'Verdadeiro', 'falso', 1, 'Verdadeiro: Um programa pode executar sem travar e ainda conter erros lógicos, como uma fórmula de soma que, por engano, realiza uma subtração.');
-(24, 'Verdadeiro', 'falso', 2, 'Falso:Um erro de sintaxe acontece quando o código desrespeita as regras da linguagem. A lógica pode estar correta, mas o programa não consegue ser interpretado ou compilado até que o problema seja corrigido.');
+(11, 'Verdadeiro', 'falso', 2, 'Falso: o caso realmente aconteceu, acharam uma mariposa causando problemas na máquina, mas o termo já era usado muito antes do ocorrido.');
+(12, 'Verdadeiro', 'falso', 2, 'Falso:A maioria das linguagens de programação permite colocar números nos nomes das variáveis, mas geralmente não permite que o nome comece com um número.');
+(13, 'Verdadeiro', 'falso', 1, 'Verdadeiro: Um programa pode executar sem travar e ainda conter erros lógicos, como uma fórmula de soma que, por engano, realiza uma subtração.');
+(14, 'Verdadeiro', 'falso', 2, 'Falso:Um erro de sintaxe acontece quando o código desrespeita as regras da linguagem. A lógica pode estar correta, mas o programa não consegue ser interpretado ou compilado até que o problema seja corrigido.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES 
-(25, 'A) O computador sempre desliga automaticamente.',
+(15, 'A) O computador sempre desliga automaticamente.',
  'B) O programa pode apresentar um erro ou comportamento inesperado.',
  'C) A linguagem de programação corrige automaticamente o código.', 
  'D) O vetor aumenta de tamanho obrigatoriamente.',
@@ -130,11 +130,11 @@ INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternati
    'O comportamento depende da linguagem. Em algumas, o acesso inválido gera uma exceção; em C, por exemplo, acessar uma posição fora dos limites de um vetor pode causar comportamento indefinido.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa) VALUES 
-(26, 'Verdadeiro', 'falso', 2, 'Falso:O problema estava no próprio hardware do processador, mais especificamente na unidade de divisão de ponto flutuante. A correção definitiva exigia substituir os processadores defeituosos, embora soluções de software pudessem contornar o problema em algumas situações.');
-(27, 'Verdadeiro', 'falso', 2, 'Falso:O problema afetava principalmente sistemas que armazenavam anos com apenas dois dígitos. Assim, o ano 2000 podia ser interpretado como 00 e confundido com 1900, dependendo das regras utilizadas pelo sistema. Nem todos os computadores foram afetados.');
+(16, 'Verdadeiro', 'falso', 2, 'Falso:O problema estava no próprio hardware do processador, mais especificamente na unidade de divisão de ponto flutuante. A correção definitiva exigia substituir os processadores defeituosos, embora soluções de software pudessem contornar o problema em algumas situações.');
+(17, 'Verdadeiro', 'falso', 2, 'Falso:O problema afetava principalmente sistemas que armazenavam anos com apenas dois dígitos. Assim, o ano 2000 podia ser interpretado como 00 e confundido com 1900, dependendo das regras utilizadas pelo sistema. Nem todos os computadores foram afetados.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa)
-VALUES (28, 'A) O programa executa um bloco de código repetidamente sem atingir uma condição de parada.',
+VALUES (18, 'A) O programa executa um bloco de código repetidamente sem atingir uma condição de parada.',
  'B) O programa apaga automaticamente todos os arquivos do computador.',
  'C) O compilador transforma o código em uma linguagem impossível de executar.', 
  'D) O programa deixa de ocupar memória RAM enquanto está em execução.',
@@ -142,10 +142,10 @@ VALUES (28, 'A) O programa executa um bloco de código repetidamente sem atingir
    'A: Um loop infinito acontece quando uma estrutura de repetição nunca termina, geralmente porque sua condição de parada nunca é satisfeita. Isso pode consumir recursos do computador e fazer o programa parar de responder.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa)
-VALUES (29, 'Verdadeiro', 'falso', 1, 'Verdadeiro: Esse fenômeno é conhecido informalmente como Heisenbug. Ele acontece quando a tentativa de investigar um erro altera o comportamento do programa, fazendo com que o problema desapareça ou se manifeste de maneira diferente. Isso pode ocorrer, por exemplo, devido a mudanças no tempo de execução causadas pelo depurador, especialmente em programas com múltiplas threads.');
+VALUES (19, 'Verdadeiro', 'falso', 1, 'Verdadeiro: Esse fenômeno é conhecido informalmente como Heisenbug. Ele acontece quando a tentativa de investigar um erro altera o comportamento do programa, fazendo com que o problema desapareça ou se manifeste de maneira diferente. Isso pode ocorrer, por exemplo, devido a mudanças no tempo de execução causadas pelo depurador, especialmente em programas com múltiplas threads.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa)
-VALUES (30, 'A) O programa sempre imprime -2147483648, pois os inteiros dão a volta automaticamente',
+VALUES (20, 'A) O programa sempre imprime -2147483648, pois os inteiros dão a volta automaticamente',
  'B) O programa sempre imprime 2147483648, pois o C permite que um int ultrapasse seu limite.',
  'C) O programa apresenta comportamento indefinido, pois ocorre estouro de um inteiro com sinal (signed integer overflow).', 
  'D) O compilador é obrigado a interromper a execução antes da soma.',
@@ -159,46 +159,46 @@ VALUES (30, 'A) O programa sempre imprime -2147483648, pois os inteiros dão a v
 
 INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
 
-(41, 'Qual destes objetos era usado para fazer cálculos muito antes dos computadores existirem?', 3, 1, 41),
-(42, 'Quem é conhecido como o criador da World Wide Web (WWW)?', 3, 1, 42),
-(43, 'O que significa a sigla PC?', 3, 1, 43),
-(44, 'Qual empresa é responsável pela criação do sistema operacional Windows?', 3, 1, 44),
-(45, 'Quem é considerada a primeira programadora da história?', 3, 1, 45),
-(46, 'Qual dispositivo substituiu as válvulas e permitiu computadores menores e mais rápidos?', 3, 3, 46),
-(47, 'Qual destes é um sistema operacional?', 3, 3, 47),
-(48, 'Qual empresa desenvolveu o primeiro processador comercial da história, o Intel 4004?', 3, 3, 48),
-(49, 'Qual era a principal função do ENIAC?', 3, 3, 49),
-(50, 'Qual foi a principal inovação teórica da Máquina Analítica de Charles Babbage?', 3, 4, 50);
+(21, 'Qual destes objetos era usado para fazer cálculos muito antes dos computadores existirem?', 3, 1, 21),
+(22, 'Quem é conhecido como o criador da World Wide Web (WWW)?', 3, 1, 22),
+(23, 'O que significa a sigla PC?', 3, 1, 23),
+(24, 'Qual empresa é responsável pela criação do sistema operacional Windows?', 3, 1, 24),
+(25, 'Quem é considerada a primeira programadora da história?', 3, 1, 25),
+(26, 'Qual dispositivo substituiu as válvulas e permitiu computadores menores e mais rápidos?', 3, 3, 26),
+(27, 'Qual destes é um sistema operacional?', 3, 3, 27),
+(28, 'Qual empresa desenvolveu o primeiro processador comercial da história, o Intel 4004?', 3, 3, 28),
+(29, 'Qual era a principal função do ENIAC?', 3, 3, 29),
+(30, 'Qual foi a principal inovação teórica da Máquina Analítica de Charles Babbage?', 3, 4, 30);
   
 /** Alternativas de História da Computação **/
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES
-(41, 'Mouse', 'Ábaco', 'Pendrive', 'Monitor', 2,
+(21, 'Mouse', 'Ábaco', 'Pendrive', 'Monitor', 2,
 'O ábaco é uma das ferramentas de cálculo mais antigas da humanidade, utilizado milhares de anos antes dos computadores modernos.'),
 
-(42, 'Bill Gates', 'Steve Jobs', 'Tim Berners-Lee', 'Linus Torvalds', 3,
+(22, 'Bill Gates', 'Steve Jobs', 'Tim Berners-Lee', 'Linus Torvalds', 3,
 'Tim Berners-Lee criou a World Wide Web (WWW), sistema que permitiu a navegação por páginas interligadas na internet.'),
 
-(43, 'Personal Computer', 'Program Computer', 'Power Computer', 'Primary Computer', 1,
+(23, 'Personal Computer', 'Program Computer', 'Power Computer', 'Primary Computer', 1,
 'PC significa Personal Computer (Computador Pessoal), termo utilizado para computadores destinados ao uso individual.'),
 
-(44, 'Apple', 'Google', 'Microsoft', 'IBM', 3,
+(24, 'Apple', 'Google', 'Microsoft', 'IBM', 3,
 'A Microsoft desenvolveu o sistema operacional Windows, um dos mais utilizados do mundo.'),
 
-(45, 'Grace Hopper', 'Ada Lovelace', 'Margaret Hamilton', 'Katherine Johnson', 2,
+(25, 'Grace Hopper', 'Ada Lovelace', 'Margaret Hamilton', 'Katherine Johnson', 2,
 'Ada Lovelace é considerada a primeira programadora da história por ter desenvolvido algoritmos para a Máquina Analítica de Charles Babbage.'),
 
-(46, 'Teclado', 'Transistor', 'Mouse', 'Scanner', 2,
+(26, 'Teclado', 'Transistor', 'Mouse', 'Scanner', 2,
 'O transistor substituiu as válvulas eletrônicas, permitindo a criação de computadores menores, mais rápidos e mais confiáveis.'),
 
-(47, 'Excel', 'Chrome', 'Windows', 'Intel', 3,
+(27, 'Excel', 'Chrome', 'Windows', 'Intel', 3,
 'Windows é um sistema operacional. Excel é um aplicativo, Chrome é um navegador e Intel é uma fabricante de processadores.'),
 
-(48, 'IBM', 'Microsoft', 'Intel', 'Apple', 3,
+(28, 'IBM', 'Microsoft', 'Intel', 'Apple', 3,
 'A Intel desenvolveu o Intel 4004, considerado o primeiro microprocessador comercial da história.'),
 
-(49, 'Navegar na internet', 'Realizar cálculos complexos', 'Criar sites', 'Armazenar fotos', 2,
+(29, 'Navegar na internet', 'Realizar cálculos complexos', 'Criar sites', 'Armazenar fotos', 2,
 'O ENIAC foi um dos primeiros computadores eletrônicos de uso geral e foi projetado principalmente para realizar cálculos complexos.'),
 
-(50, 'Uso de energia elétrica', 'Capacidade de armazenar programas e executar instruções', 'Conexão entre computadores por rede', 'Uso de transistores para processamento', 2,
+(30, 'Uso de energia elétrica', 'Capacidade de armazenar programas e executar instruções', 'Conexão entre computadores por rede', 'Uso de transistores para processamento', 2,
 'A Máquina Analítica de Charles Babbage introduziu conceitos fundamentais dos computadores modernos, como o armazenamento de instruções e a execução programável de operações.');
