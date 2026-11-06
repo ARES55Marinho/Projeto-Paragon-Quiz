@@ -45,68 +45,20 @@ INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternati
 'Uma linguagem que exige que todas as variáveis sejam globais.', 2, 'A tipagem gradual combina tipagem estática e dinâmica.');
 
 
-## Hack em Geral
-INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES
-(31, 'Trojan', 'Firewall', 'Driver', 'Compiler', 1,
-'Um Trojan, também conhecido como Cavalo de Troia, é um programa malicioso que se disfarça de software legítimo para enganar o usuário e executar ações prejudiciais.'),
-
-(32, 'Um sistema que traduz linguagens de programação', 'Um sistema que monitora e controla o tráfego de rede',
-'Um programa que aumenta a velocidade do processador', 'Um dispositivo que recupera arquivos apagados', 2,
-'O firewall monitora e controla o tráfego de rede, podendo bloquear conexões suspeitas ou não autorizadas para ajudar a proteger o sistema.'),
-
-(33, 'Phishing', 'Overclock', 'Desfragmentação', 'Criptografia', 1,
-'Phishing é um golpe no qual o criminoso se passa por uma pessoa ou organização confiável para enganar a vítima e obter informações confidenciais.'),
-
-(34, 'Compartilhar a senha com amigos', 'Utilizar a mesma senha em vários sites',
-'Desativar a autenticação em dois fatores para evitar etapas extras no login', 'Utilizar senhas fortes e diferentes para cada conta', 4,
-'Utilizar senhas fortes e exclusivas para cada conta dificulta invasões e impede que uma senha descoberta em um serviço seja utilizada para acessar outras contas.'),
-
-(35, 'Modificar permissões de arquivos localmente', 'Descobrir a senha de um usuário por tentativa e erro',
-'Indisponibilizar um serviço sobrecarregando-o com tráfego', 'Criptografar arquivos do usuário', 3,
-'Um ataque DDoS busca tornar um serviço indisponível ao sobrecarregá-lo com uma grande quantidade de tráfego proveniente de diferentes dispositivos.'),
-
-(36, 'Aumentar a velocidade de uma conexão de internet.', 'Executar programas em um ambiente isolado para limitar possíveis danos ao sistema principal.',
-'Permitir que qualquer programa tenha acesso administrativo.', 'Remover automaticamente todas as senhas de um computador.', 2,
-'Sandboxing permite executar programas em um ambiente isolado, reduzindo o risco de que atividades maliciosas afetem o restante do sistema.'),
-
-(37, 'Quando um servidor recebe conexões de diferentes países', 'Quando um banco de dados realiza consultas simultâneas',
-'Quando um programa utiliza toda a capacidade de armazenamento do disco', 'Quando dados excedem a capacidade de um buffer e podem sobrescrever áreas adjacentes da memória', 4,
-'Buffer Overflow acontece quando um programa recebe mais dados do que um buffer consegue armazenar, podendo sobrescrever regiões próximas da memória e causar falhas ou permitir a execução de código malicioso.'),
-
-(38, 'Verdadeiro', 'Falso', NULL, NULL, 1,
-'Utilizar a mesma senha em vários sites aumenta os riscos porque, se um serviço sofrer um vazamento, criminosos poderão tentar utilizar essa senha para acessar outras contas.'),
-
-(39, 'Verdadeiro', 'Falso', NULL, NULL, 2,
-'Um ataque de força bruta tenta descobrir senhas testando diversas combinações possíveis, e não apenas o mínimo de combinações.'),
-
-(40, 'Verdadeiro', 'Falso', NULL, NULL, 2, 'HTTPS protege a comunicação entre o navegador e o site por meio de criptografia, mas não garante que o próprio site seja confiável ou esteja livre de golpes.');
-
-INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
-(31, 'Qual é o nome dado a um programa malicioso que se disfarça de software legítimo para enganar o usuário?', 4, 1, 31),
-(32, 'O que é um firewall em um computador ou rede?', 4, 1, 32),
-(33, 'Utilizar a mesma senha em vários sites aumenta o risco caso um desses serviços sofra um vazamento de dados.', 4, 1, 38),
-(34, 'Como é chamado o golpe em que alguém se passa por uma empresa ou pessoa confiável para roubar informações?', 4, 1, 33),
-(35, 'Um ataque de força bruta tenta descobrir uma senha testando o mínimo de combinações possíveis.', 4, 2, 39),
-(36, 'Quais destas práticas ajudam a proteger uma conta contra invasões?', 4, 2, 34),
-(37, 'Qual é a principal finalidade de um ataque DDoS?', 4, 2, 35),
-(38, 'Uma conexão HTTPS garante que um site seja legítimo e não possa ser utilizado para aplicar golpes.', 4, 3, 40),
-(39, 'Qual é a finalidade de uma técnica chamada "Sandboxing" em segurança?', 4, 3, 36),
-(40, 'Em segurança de memória, o que é um ataque de Buffer Overflow?', 4, 4, 37);
-  
 ## Erros da Computação
 /**Perguntas de Erros da Computação **/
 
 INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
-(11, 'O termo bug, se originou quando encontraram um inseto dentro de um computador?', '2', '1', 11);
-(12, 'Nas linguagens de programação podemos colocar números no início do nome das variáveis? Como 1nota e 2nota?', '2', '1', 12);
-(13, 'Um erro de programação pode fazer um programa funcionar corretamente, mas apresentar resultados errados?', '2', '1', 13);
-(14, 'Se um código apresenta um erro de sintaxe, significa que a lógica do programa está necessariamente errada?', '2', '1', 14);
-(15, 'O que acontece quando um programa tenta acessar uma posição inexistente de um vetor?', '2', '2', 15);
-(16, 'O famoso bug do processador Pentium, descoberto em 1994, fazia com que determinados cálculos de divisão produzissem resultados incorretos. A Intel corrigiu o problema simplesmente atualizando o sistema operacional dos computadores afetados. Verdadeiro ou falso?', '3', '2', 16);
+(11, 'O termo bug, se originou quando encontraram um inseto dentro de um computador?', '2', '1', 11),
+(12, 'Nas linguagens de programação podemos colocar números no início do nome das variáveis? Como 1nota e 2nota?', '2', '1', 12),
+(13, 'Um erro de programação pode fazer um programa funcionar corretamente, mas apresentar resultados errados?', '2', '1', 13),
+(14, 'Se um código apresenta um erro de sintaxe, significa que a lógica do programa está necessariamente errada?', '2', '1', 14),
+(15, 'O que acontece quando um programa tenta acessar uma posição inexistente de um vetor?', '2', '2', 15),
+(16, 'O famoso bug do processador Pentium, descoberto em 1994, fazia com que determinados cálculos de divisão produzissem resultados incorretos. A Intel corrigiu o problema simplesmente atualizando o sistema operacional dos computadores afetados. Verdadeiro ou falso?', '3', '2', 16),
 (17, 'O problema do ano 2000 (Bug do Milênio) aconteceu porque todos os computadores do mundo interpretavam o ano 2000 como 1900.
-Verdadeiro ou falso?', '2', '2', 17);
-(18, 'Um programa entra em um loop infinito devido a um erro de programação. Qual das alternativas descreve melhor essa situação?', '2', '3', 18);
-(19, 'Em programação, um programa pode apresentar um erro que desaparece quando o desenvolvedor tenta investigá-lo usando ferramentas de depuração (debugging). Verdadeiro ou falso?', '2', '3', 19);
+Verdadeiro ou falso?', '2', '2', 17),
+(18, 'Um programa entra em um loop infinito devido a um erro de programação. Qual das alternativas descreve melhor essa situação?', '2', '3', 18),
+(19, 'Em programação, um programa pode apresentar um erro que desaparece quando o desenvolvedor tenta investigá-lo usando ferramentas de depuração (debugging). Verdadeiro ou falso?', '2', '3', 19),
 (20, 'Um programa escrito em C apresenta o seguinte código:
 int x = 2147483647;
 x = x + 1;
@@ -116,9 +68,9 @@ Considerando uma implementação comum em que int é um inteiro de 32 bits com s
 /**Alternativas de Erros da Computação **/
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa) VALUES 
-(11, 'Verdadeiro', 'falso', 2, 'Falso: o caso realmente aconteceu, acharam uma mariposa causando problemas na máquina, mas o termo já era usado muito antes do ocorrido.');
-(12, 'Verdadeiro', 'falso', 2, 'Falso:A maioria das linguagens de programação permite colocar números nos nomes das variáveis, mas geralmente não permite que o nome comece com um número.');
-(13, 'Verdadeiro', 'falso', 1, 'Verdadeiro: Um programa pode executar sem travar e ainda conter erros lógicos, como uma fórmula de soma que, por engano, realiza uma subtração.');
+(11, 'Verdadeiro', 'falso', 2, 'Falso: o caso realmente aconteceu, acharam uma mariposa causando problemas na máquina, mas o termo já era usado muito antes do ocorrido.'),
+(12, 'Verdadeiro', 'falso', 2, 'Falso:A maioria das linguagens de programação permite colocar números nos nomes das variáveis, mas geralmente não permite que o nome comece com um número.'),
+(13, 'Verdadeiro', 'falso', 1, 'Verdadeiro: Um programa pode executar sem travar e ainda conter erros lógicos, como uma fórmula de soma que, por engano, realiza uma subtração.'),
 (14, 'Verdadeiro', 'falso', 2, 'Falso:Um erro de sintaxe acontece quando o código desrespeita as regras da linguagem. A lógica pode estar correta, mas o programa não consegue ser interpretado ou compilado até que o problema seja corrigido.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES 
@@ -130,7 +82,7 @@ INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternati
    'O comportamento depende da linguagem. Em algumas, o acesso inválido gera uma exceção; em C, por exemplo, acessar uma posição fora dos limites de um vetor pode causar comportamento indefinido.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, resposta, justificativa) VALUES 
-(16, 'Verdadeiro', 'falso', 2, 'Falso:O problema estava no próprio hardware do processador, mais especificamente na unidade de divisão de ponto flutuante. A correção definitiva exigia substituir os processadores defeituosos, embora soluções de software pudessem contornar o problema em algumas situações.');
+(16, 'Verdadeiro', 'falso', 2, 'Falso:O problema estava no próprio hardware do processador, mais especificamente na unidade de divisão de ponto flutuante. A correção definitiva exigia substituir os processadores defeituosos, embora soluções de software pudessem contornar o problema em algumas situações.'),
 (17, 'Verdadeiro', 'falso', 2, 'Falso:O problema afetava principalmente sistemas que armazenavam anos com apenas dois dígitos. Assim, o ano 2000 podia ser interpretado como 00 e confundido com 1900, dependendo das regras utilizadas pelo sistema. Nem todos os computadores foram afetados.');
 
 INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa)
@@ -202,3 +154,53 @@ INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternati
 
 (30, 'Uso de energia elétrica', 'Capacidade de armazenar programas e executar instruções', 'Conexão entre computadores por rede', 'Uso de transistores para processamento', 2,
 'A Máquina Analítica de Charles Babbage introduziu conceitos fundamentais dos computadores modernos, como o armazenamento de instruções e a execução programável de operações.');
+
+## Hack em Geral
+  
+INSERT INTO alternativa (id_alternativa, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta, justificativa) VALUES
+(31, 'Trojan', 'Firewall', 'Driver', 'Compiler', 1,
+'Um Trojan, também conhecido como Cavalo de Troia, é um programa malicioso que se disfarça de software legítimo para enganar o usuário e executar ações prejudiciais.'),
+
+(32, 'Um sistema que traduz linguagens de programação', 'Um sistema que monitora e controla o tráfego de rede',
+'Um programa que aumenta a velocidade do processador', 'Um dispositivo que recupera arquivos apagados', 2,
+'O firewall monitora e controla o tráfego de rede, podendo bloquear conexões suspeitas ou não autorizadas para ajudar a proteger o sistema.'),
+
+(33, 'Phishing', 'Overclock', 'Desfragmentação', 'Criptografia', 1,
+'Phishing é um golpe no qual o criminoso se passa por uma pessoa ou organização confiável para enganar a vítima e obter informações confidenciais.'),
+
+(34, 'Compartilhar a senha com amigos', 'Utilizar a mesma senha em vários sites',
+'Desativar a autenticação em dois fatores para evitar etapas extras no login', 'Utilizar senhas fortes e diferentes para cada conta', 4,
+'Utilizar senhas fortes e exclusivas para cada conta dificulta invasões e impede que uma senha descoberta em um serviço seja utilizada para acessar outras contas.'),
+
+(35, 'Modificar permissões de arquivos localmente', 'Descobrir a senha de um usuário por tentativa e erro',
+'Indisponibilizar um serviço sobrecarregando-o com tráfego', 'Criptografar arquivos do usuário', 3,
+'Um ataque DDoS busca tornar um serviço indisponível ao sobrecarregá-lo com uma grande quantidade de tráfego proveniente de diferentes dispositivos.'),
+
+(36, 'Aumentar a velocidade de uma conexão de internet.', 'Executar programas em um ambiente isolado para limitar possíveis danos ao sistema principal.',
+'Permitir que qualquer programa tenha acesso administrativo.', 'Remover automaticamente todas as senhas de um computador.', 2,
+'Sandboxing permite executar programas em um ambiente isolado, reduzindo o risco de que atividades maliciosas afetem o restante do sistema.'),
+
+(37, 'Quando um servidor recebe conexões de diferentes países', 'Quando um banco de dados realiza consultas simultâneas',
+'Quando um programa utiliza toda a capacidade de armazenamento do disco', 'Quando dados excedem a capacidade de um buffer e podem sobrescrever áreas adjacentes da memória', 4,
+'Buffer Overflow acontece quando um programa recebe mais dados do que um buffer consegue armazenar, podendo sobrescrever regiões próximas da memória e causar falhas ou permitir a execução de código malicioso.'),
+
+(38, 'Verdadeiro', 'Falso', NULL, NULL, 1,
+'Utilizar a mesma senha em vários sites aumenta os riscos porque, se um serviço sofrer um vazamento, criminosos poderão tentar utilizar essa senha para acessar outras contas.'),
+
+(39, 'Verdadeiro', 'Falso', NULL, NULL, 2,
+'Um ataque de força bruta tenta descobrir senhas testando diversas combinações possíveis, e não apenas o mínimo de combinações.'),
+
+(40, 'Verdadeiro', 'Falso', NULL, NULL, 2, 'HTTPS protege a comunicação entre o navegador e o site por meio de criptografia, mas não garante que o próprio site seja confiável ou esteja livre de golpes.');
+
+INSERT INTO pergunta (id_pergunta, texto_pergunta, id_tema, id_dificuldade, id_alternativa) VALUES
+(31, 'Qual é o nome dado a um programa malicioso que se disfarça de software legítimo para enganar o usuário?', 4, 1, 31),
+(32, 'O que é um firewall em um computador ou rede?', 4, 1, 32),
+(33, 'Utilizar a mesma senha em vários sites aumenta o risco caso um desses serviços sofra um vazamento de dados.', 4, 1, 38),
+(34, 'Como é chamado o golpe em que alguém se passa por uma empresa ou pessoa confiável para roubar informações?', 4, 1, 33),
+(35, 'Um ataque de força bruta tenta descobrir uma senha testando o mínimo de combinações possíveis.', 4, 2, 39),
+(36, 'Quais destas práticas ajudam a proteger uma conta contra invasões?', 4, 2, 34),
+(37, 'Qual é a principal finalidade de um ataque DDoS?', 4, 2, 35),
+(38, 'Uma conexão HTTPS garante que um site seja legítimo e não possa ser utilizado para aplicar golpes.', 4, 3, 40),
+(39, 'Qual é a finalidade de uma técnica chamada "Sandboxing" em segurança?', 4, 3, 36),
+(40, 'Em segurança de memória, o que é um ataque de Buffer Overflow?', 4, 4, 37);
+  
