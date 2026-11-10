@@ -48,3 +48,5 @@ paragon-quiz/
 ## Como executar localmente
 
 Abra a pasta no VS Code e use a extensão Live Server para abrir `index.html`. Como o projeto usa CDN do Supabase e Google Fonts, é necessária conexão com a internet.
+
+URL: https://ares55marinho.github.io/Projeto-Paragon-Quiz/paragon-quiz-final/
